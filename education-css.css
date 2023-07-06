@@ -1,0 +1,75 @@
+.education-section
+{
+    display: flex;
+    height: 1300px;
+    background-color: #212121;
+    position: relative;
+}
+
+#edArt
+{
+    width: 20%;
+    background-color: #212121;
+    padding-left: 90px;
+    padding-top: 130px;
+    position: relative;
+}
+
+
+#edArt > div > img
+{
+    width: 150px;
+    height: 150px;
+    border: #f3e700 solid 15px;
+    border-radius: 10px;
+    margin: 150px 50px 50px 50px;
+
+}
+
+
+#edText
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 130px;
+    color: #dfdfdf;
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+#edText > *
+{
+    margin: 180px 50px 50px 50px;
+}
+#edBG
+{
+    width: 40%;
+    background-color: #dfdfdf;
+
+}
+
+#edBG div
+{
+    background: url("../Content/school1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-position: 250px;
+    opacity: 30%;
+
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: nowrap;
+
+    font-size: 200px;
+    color: #41cee3;
+    box-sizing: border-box;
+    padding-right: 450px;
+    padding-top: 250px;
+}
+
+

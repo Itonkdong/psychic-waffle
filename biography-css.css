@@ -1,0 +1,90 @@
+.bio-section
+{
+    height: 1200px;
+    margin-top: 250px;
+    background-color: #e1e1e1;
+    display: flex;
+    padding: 350px 70px 30px 70px;
+
+    box-sizing: border-box;
+}
+
+.bio-section #portret2
+{
+    margin-left: 50px;
+    width: 50%;
+}
+
+.bio-section #bio
+{
+    width: 40%;
+}
+
+.bio-inner-flexContainer
+{
+    display: flex;
+    box-sizing: border-box;
+    height: 70px;
+    margin-bottom: 50px;
+}
+
+.bio-inner-flexContainer > div:first-of-type
+{
+    width: 50%;
+    text-align: right;
+    line-height: 3px;
+
+}
+
+.bio-inner-flexContainer > div:first-of-type h3
+{
+    text-transform: lowercase;
+}
+.bio-inner-flexContainer > div:first-of-type h2
+{
+    text-transform: uppercase;
+    font-weight: bold;
+
+    font-size: 50px;
+}
+
+.bio-inner-flexContainer > div:first-of-type h2 span
+{
+    background: url("../Content/bg2.png");
+    //background-repeat: no-repeat;
+}
+
+.bio-inner-flexContainer > div:last-of-type
+{
+    width: 50%;
+    padding-top: -50px;
+    text-align: center;
+}
+
+.bio-inner-flexContainer > div:last-of-type img
+{
+    width: 300px;
+}
+
+#bio p
+{
+    font-size: 20px;
+}
+
+.bio-section #portret2 div
+{
+    background-color: #1e1e1e;
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.bio-section #portret2 div img
+{
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+}

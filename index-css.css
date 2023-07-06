@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+
+ *
+ {
+     scroll-behavior: smooth;
+ }
+
+button
+
+{
+    border: none;
+}
+body
+{
+    font-family: 'Nunito', sans-serif;
+    padding: 0;
+    margin:0;
+    background-color: #212121;
+    height: 1150px;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+header
+{
+    display: flex;
+    background-color: #585858;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+header span
+{
+    font-size: 30px;
+    width: 30%;
+    background-color: #1c1c1c;
+    text-align: center;
+    padding-top: 35px;
+    text-transform: uppercase;
+    transition: 0.8s;
+}
+
+header ul
+{
+    width: 70%;
+    box-sizing: border-box;
+    margin-left: 60px;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+}
+
+header ul li
+{
+    font-size: 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    //margin: 15px;
+    padding: 20px 30px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.current-page
+{
+    height: 60px;
+    //padding-bottom: 30px;
+    box-sizing: border-box;
+    border-bottom: #f3e700 solid 4px;
+    //margin-bottom: 4px;
+    transition: all 0.2s ease-in;
+    border-radius: 3px;
+}
+
+.current-page:hover
+{
+    transform: translateY(-3px);
+    transition: all 0.8s ease;
+}
+
+
+
+
+header ul li:hover
+{
+    background-color: #f3e700;
+    border-radius: 15px;
+    color: #1c1c1c;
+}
+
+header span:hover
+{
+    //font-size: 26px;
+    background-color: #181818;
+}
+
+
+
+
+.main-section
+{
+    margin-top: 90px;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: #212121;
+    height: 1200px;
+}
+
+.main-section #portret
+{
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    z-index: 0;
+
+}
+
+.main-section #portret img
+{
+    height: 850px;
+    width: 900px;
+   border-radius: 30px;
+    opacity: 80%;
+}
+
+.main-section #dots
+{
+    height: 50%;
+    box-sizing: border-box;
+    padding-top: 200px;
+    padding-left: 80px;
+}
+.main-section #dots img
+{
+    height: 180px;
+}
+
+.main-section #introduction
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 200px;
+    color: #ead5d5;
+    height: 30%;
+    z-index: 1;
+}
+
+.main-section #introduction p:nth-of-type(1)
+{
+    font-size: 40px;
+    line-height: 42px;
+}
+
+.main-section #introduction p:nth-of-type(1) span
+{
+    display: inline-block;
+    margin-top: -500px;
+    box-sizing: border-box;
+    font-size: 50px;
+}
+
+.main-section #introduction p:nth-of-type(2)
+{
+    color: #1c1c1c;
+    background-color: #f3e700;
+    width: 350px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+    margin-top: -10px;
+    border-radius: 30px;
+}
+
+.main-section #learn-more
+{
+    background-color: #41cee3;
+    width: 250px;
+    align-self: center;
+    height: 70px;
+    color: #1c1c0d;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box  ;
+    margin-top: 80px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.main-section #learn-more:hover
+{
+    background-color: #f3e700;
+    color: #1c1c1c;
+    transition: background-color 0.7s ease;
+}
+
+
+/*Animation*/
+
+.reveal
+{
+    position: relative;
+    transform: translateY(250px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active
+{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+/*Footer*/
+footer
+{
+    margin-top: 0;
+    height: 80px;
+    background-color: #1c1c1c;
+    box-sizing: border-box;
+    padding-top: 25px;
+    text-align: center;
+}
