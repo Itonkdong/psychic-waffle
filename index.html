@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="CSS/index-css.css">
+    <link rel="stylesheet" href="CSS/biography-css.css">
+    <link rel="stylesheet" href="CSS/education-css.css">
+    <link rel="stylesheet" href="CSS/hobbies-css.css">
+    <link rel="stylesheet" href="CSS/contact-css.css">
+</head>
+<body>
+
+<header>
+    <span>MY PORTFOLIO</span>
+    <ul>
+        <li class="nav-item" onclick="location.href='#home';">Home</li>
+        <li class="nav-item" onclick="location.href='#biography';">Biography</li>
+        <li class="nav-item" onclick="location.href='#education';">Education</li>
+        <li class="nav-item" onclick="location.href='#hobbiesS';">Hobbies</li>
+        <li class="nav-item" onclick="location.href='#contact';">Contact</li>
+    </ul>
+</header>
+
+<section class="main-section updateOnScroll" id="home">
+
+    <div id="portret">
+        <img src="Content/1-final.jpg" alt="My Picture">
+    </div>
+
+    <div id="dots">
+        <img src="Content/dots2.png" alt="Abstract dots">
+    </div>
+
+    <div id="introduction">
+        <p>Mine name is<br><span>Viktor Kostadinoski</span></p>
+        <p>I am student at FINKI</p>
+    </div>
+
+    <button id="learn-more" class="reveal" onclick="location.href='#biography';"> Get to know me better</button>
+
+</section>
+
+
+<section class="bio-section updateOnScroll" id="biography">
+    <div id="portret2" class="reveal">
+        <div>
+            <img src="Content/2-final_.jpg" alt="My Picture 2">
+        </div>
+    </div>
+
+    <div id="bio" class="reveal">
+        <div class="bio-inner-flexContainer">
+            <div>
+                <h3>Who am i</h3>
+                <h2><span>Hello</span></h2>
+            </div>
+            <div>
+                <img src="Content/waves3.png" alt="Abstract waves">
+            </div>
+
+        </div>
+
+        <p>
+
+            My nami is Viktor Kostadinoski. I am 20 years student who comes from a small town in Macedonia called
+            Prilep. I started my education in my hometown where I finished middle and high school. Last year I moved in
+            Skopje where I started studying at the Faculty of computer science and engineering.
+            <br><br>
+            I always loved computers and everything technology-related. Even as i child I would sit in front of our old
+            computer and would try to understand how does that magic-box work. But, even tho I loved computers since I
+            was a kid, I didn't start learning something usefully about them, not until later in life.
+            I got into coding at a relatively "old" age - in my first year in high school. At first, I was terrified but
+            after some lessons I got the hang of it. Couple more lessons went by and I knew that that is something I
+            want to do for the rest of my life... So here is my doing it ;)
+        </p>
+    </div>
+</section>
+
+
+<section class="education-section updateOnScroll" id="education">
+    <div id="edArt" class="reveal">
+        <div>
+            <img src="Content/ed1.png" alt="Books">
+        </div>
+        <div>
+            <img src="Content/ed2.png" alt="Maths">
+        </div>
+        <div>
+            <img src="Content/ed3.png" alt="Collage Graduation Cap">
+        </div>
+
+    </div>
+    <div id="edText">
+        <p class="reveal">Elementary and middle school "Blaze Koneski" <br>2009-2018, Prilep</p>
+        <p class="reveal">High school "Mirce Acev"<br>2018-2022, Prilep</p>
+        <p class="reveal">Faculty of computer science and engineering<br>2022-Present, Skopje</p>
+    </div>
+    <div id="edBG">
+        <div class="reveal"><span>Education</span></div>
+
+    </div>
+
+</section>
+
+
+<section class="hobbies-section updateOnScroll" id="hobbiesS">
+    <div id="hobbies" class="reveal">
+        Even though I love coding, I also like to do other things in my free time. One of those things is another kind
+        of writing, which is poetic writing. It is something new and unexpected for me, but also something that in a
+        short time has become an activity that completely fulfills and cheers me up. It helps me organize my thoughts
+        better, preparing for the next brain-pounding coding challenges.
+        <br><br>When I have more free time, of course I'm talking about the time when it's not the midterm, I also like
+        to go to the gym with a few of my friends.
+    </div>
+    <div id="hobbiesPic">
+        <div class="reveal"><span>Hobbies</span></div>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div >
+        Contact me on:
+    </div>
+    <div class="contact-section-inner">
+        <div id="left-media">
+            <div class="reveal">
+                <a href="https://www.facebook.com/zuck" target="_blank"><img src="Content/facebook.png" alt="Facebook logo"></a>
+            </div>
+            <div class="reveal">
+                <a href="https://www.instagram.com/zuck/" target="_blank"><img src="Content/instagram.png" alt="Instagram logo"></a>
+            </div>
+        </div>
+        <div id="right-media">
+            <div class="reveal">
+                <a href="https://twitter.com/elonmusk" target="_blank"><img src="Content/twitter.png" alt="Twitter logo"></a>
+
+            </div>
+            <div class="reveal">
+                <a href="https://www.facebook.com/BillGates" target="_blank"><img src="Content/mail.png" alt="Mail logo"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer>
+    &copy; All right reserved.Viktor Kostadinoski 2023
+</footer>
+
+
+<script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal()
+    {
+        var reveals = document.querySelectorAll('.reveal');
+        for (let i = 0; i < reveals.length; i++)
+        {
+            var windowHeight = window.innerHeight;
+            var revealTop = reveals[i].getBoundingClientRect().top;
+            var revealPoint = 150;
+
+            if (revealTop < windowHeight - revealPoint)
+            {
+                reveals[i].classList.add('active');
+            } else
+            {
+                reveals[i].classList.remove('active');
+            }
+
+        }
+
+    }
+
+    window.addEventListener('scroll', scrollUpdate);
+    function scrollUpdate()
+    {
+        // Get the current scroll position
+        const scrollPosition = window.scrollY;
+
+        // Get all the sections and navigation items
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        // Iterate through each section to check if it's in the viewport
+        sections.forEach(function (section, index)
+        {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const navItem = navItems[index];
+
+            // Check if the section is currently in the viewport
+            if (scrollPosition  + 100 >= sectionTop && scrollPosition < sectionTop + sectionHeight - 200)
+            {
+                // Add the 'active' class to the corresponding navigation item
+                navItem.classList.add('current-page');
+            } else
+            {
+                // Remove the 'active' class from the navigation item if it's not in the viewport
+                navItem.classList.remove('current-page');
+            }
+        });
+    }
+</script>
+
+</body>
+</html>
